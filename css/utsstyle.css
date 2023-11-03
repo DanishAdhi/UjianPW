@@ -26,7 +26,7 @@ body{
     display:flex;
     justify-content: space-between;
     align-items:center;
-    padding: 1.4rem 7%;
+    padding: 1.3rem 7%;
     background-color:rgb(255, 242, 0);
     border-bottom: 1px solid var(--primary);
     position:fixed;
@@ -49,10 +49,15 @@ body{
     color: var(--primary);
 }
 
+
 .navbar .navbar-nav a {
     color:black;
     display: inline-block;
     margin: 0 1rem;
+    gap:2rem;
+  
+   
+
 }
 
 .navbar .navbar-nav a:hover {
@@ -72,6 +77,175 @@ transition:0.2s linear;
     transform:scaleX(0.5);
 }
 
+/*dropdown menu 1*/
+
+.navbar .Navbar-nav-dropdown a {
+    color:black;
+    display: inline-block;
+    margin: 0 1rem;
+    gap:2rem;
+   
+   
+}
+
+.navbar .Navbar-nav-dropdown, .drop-down-menu {
+    list-style: none;
+    height: 10%;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.drop-down-menu{
+    position: absolute;
+    padding-bottom:0.5rem;
+    margin: 1rem -1rem;
+    background: transparent;
+    backdrop-filter: blur(05px);
+    color: black;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    font-size: 12px;
+    display: none;
+}
+
+.navbar .Navbar-nav-dropdown:hover {
+   border-bottom: 0.1rem solid var(--primary);
+    color: white;
+    border-radius: 1rem;
+    transition:0.2s linear;
+}
+
+.navbar .Navbar-nav-dropdown:hover .drop-down-menu {
+    display: block;
+}
+
+.navbar .Navbar-nav-dropdown, .drop-down-menu a {
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar .Navbar-nav-dropdown .dropdown-icon {
+    font-size: 18px;
+    position: relative;
+    right: -5px;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.navbar .Navbar-nav-dropdown:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+ .drop-down-menu :hover {
+  border-bottom: 0.1rem solid var(--primary);
+    color: white;
+    border-radius: 1rem;
+}
+.navbar .Navbar-navdropdown a:hover {
+    color:var(--primary);
+}
+
+.navbar .Navbar-nav-dropdown a::after {
+content:'';
+display:block;
+padding-bottom:0.5rem;
+border-bottom: 0.1rem solid var(--primary);
+transform: scaleX(0);
+transition:0.2s linear;
+}
+.navbar .Navbar-nav-dropdown a:hover::after{
+    transform:scaleX(0.5);
+}
+
+
+
+
+/*dropdown menu 2*/
+
+.navbar .Navbar-dropdown a {
+    color:black;
+    display: inline-block;
+    margin: 0 1rem;
+    gap:2rem;
+}
+
+.navbar .Navbar-dropdown, .drop-down  {
+    list-style: none;
+ height: 5%;
+
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.drop-down {
+    position: absolute;
+    padding: 0.5rem 0.1rem;
+    margin: 3rem -3rem;
+    background:transparent;
+    backdrop-filter: blur(05px);
+    color: black;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    font-size: 12px;
+    display: none;
+}
+
+.navbar .Navbar-dropdown:hover {
+   border-bottom: 0.1rem solid var(--primary);
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.navbar .Navbar-dropdown:hover .drop-down {
+    display: block;
+}
+
+.navbar .Navbar-dropdown, .drop-down-menu a {
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar .Navbar-dropdown .dropdown-icon {
+    font-size: 18px;
+    position: relative;
+    right: -5px;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.navbar .Navbar-dropdown:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+ .drop-down  :hover {
+  border-bottom: 0.1rem solid var(--primary);
+    color:white;
+    border-radius: 1rem;
+}
+.navbar .Navbar-nav-dropdown a:hover {
+    color:var(--primary);
+}
+
+.navbar .Navbar-dropdown a::after {
+content:'';
+display:block;
+padding-bottom:0.5rem;
+border-bottom: 0.1rem solid var(--primary);
+transform: scaleX(0);
+transition:0.2s linear;
+}
+.navbar .Navbar-nav-dropdown a:hover::after{
+    transform:scaleX(0.5);
+}
+
+
+
+/*navbar extra*/
+
+
+
+
+
 .navbar .navbar-extra a{
     color: black;
     margin:0 0.5rem;
@@ -85,7 +259,7 @@ transition:0.2s linear;
 
 
 #Menu {
-    display: none;
+    display: inline-block;
 }
 
 /*Hero Section*/
