@@ -102,6 +102,7 @@ transition:0.2s linear;
     padding-bottom:0.5rem 0;
     margin: 1rem -1rem;
     background:transparent;
+    backdrop-filter: blur(10px);
     color: black;
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
@@ -328,8 +329,9 @@ transition:0.3s linear;
     html {
         font-size: 75%;
     }
-}
 
+
+}
 
 /*Tablet*/
 @media (max-width: 768px) {
@@ -337,15 +339,15 @@ transition:0.3s linear;
         font-size: 62.5%;
     }
 
-}
 
+
+}
 /*mobile phone*/
 @media (max-width: 450px) {
     html {
         font-size: 55%;
     }
 }
-
 
 
 
@@ -418,12 +420,32 @@ transition:0.3s linear;
     margin-right: 20%;
 	text-align: center;
 }
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+
+
+}
+
+/*Tablet*/
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+
+
+
+}
+/*mobile phone*/
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+}
 
 
 
 
 
-
-
-/*Login Form*/
 
