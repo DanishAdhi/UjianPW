@@ -1,19 +1,53 @@
-const navbarNav = document.querySelector(".navbarNav");
-// ketike menu diklik
-document.querySelector("#Menu").onclick = () => {
-  navbarnav.classList.toggle("active");
-};
-// klik di luar sidebar untuk menghilangkan nav
-const navbarnav = document.querySelector('#Menu');
+// sidebar
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
 
-document.addEventListener("click", function (e) {
-  if (!Menu.contains(e.target) && !navbarnav.contains(e.target)) {
-    navbarnav.classList.remove("active");
-  }
-});
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
 
-// active toggle login
+// digital clock
+// Calling showTime function at every second
+setInterval(showTime, 1000);
 
-// login
+// Defining showTime funcion
+function showTime() {
+	// Getting current time 
+   let time = new Date();
+	let hour = time.getHours();
+	let min = time.getMinutes();
+	let sec = time.getSeconds();
+	am_pm = "AM";
 
+	
+	if (hour >= 12) {
+		if (hour > 12) hour -= 12;
+		am_pm = "PM";
+	} else if (hour == 0) {
+		hr = 12;
+		am_pm = "AM";
+	}
 
+	hour =
+		hour < 10 ? "0" + hour : hour;
+	min = min < 10 ? "0" + min : min;
+	sec = sec < 10 ? "0" + sec : sec;
+
+	let currentTime =
+		hour +
+		":" +
+		min +
+		":" +
+		sec +
+		am_pm;
+
+	// Displaying the time
+	document.getElementById(
+		"clock"
+	).innerHTML = currentTime;
+}
+
+showTime();
