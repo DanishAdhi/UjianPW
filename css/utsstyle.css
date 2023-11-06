@@ -175,14 +175,14 @@ transition:0.2s linear;
    
 }
 
-.navbar .Navbar-dropdown, .drop-down li {
+.navbar .Navbar-dropdown, .drop-down  {
     list-style: none;
     height: 20%;
-    font-weight: 400;
+    font-weight: 500;
     cursor: pointer;
 }
 
-.drop-down {
+.drop-down li {
     background-color: rgb(255, 242, 0);
     min-width: 70px;
     font-weight: 400;
