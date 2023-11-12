@@ -1,6 +1,6 @@
 :root { 
     --primary: maroon;
-    --background: white;
+    --background: black ;
 }
 
 *{
@@ -17,8 +17,8 @@
 body{
     font-family: 'Maven Pro',sans-serif;
     background-color: var(--background);
-    color:black;
-    min-height: 2000px;
+    color:white;
+    min-height: 4000px;
     
 }
 
@@ -566,21 +566,21 @@ transition:0.2s linear;
 /*Section Counter*/
 .wrapper-class {
 position:absolute;
-width:50vw;
+width:100%;
 transform: translate(-50%, -50%);
 box-sizing: border-box;
 display:flex;
 top: 140%;
 left: 50%;
 justify-content: space-around;
-gap:20px;
+gap:8px;
 }
 
 .contain {
     width:40vmin;
     height:40vmin;
     border: 1px solid white;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(255, 252, 252, 0.2);
     display:flex;
     align-items: center;
     flex-direction:column;
@@ -593,13 +593,15 @@ gap:20px;
     border-radius: 5px;
 }
 .Judul {
-    color: black;
-    margin-left: 45%;
-    margin-right: 45%;
+    color: white;
+    text-align: center;
     font-size: 35px;
     font-weight: 700;
-   
+    margin-bottom:3rem; 
 }
+    
+
+
 
 
 .icon {
@@ -664,3 +666,241 @@ span.text {
         height: 25vmin;
     }
 }
+
+/*about section*/
+.about {
+padding: 10rem 7% 1.4rem;
+background-color: white;
+}
+
+
+.about.container{
+width:80%;
+margin:50px auto;
+}
+
+.about .contact-box{
+    background: white;
+    display:flex;
+}
+
+.about .Judul {
+   color: black;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom:3rem;  
+}
+
+
+.about .container{
+width:100%;
+margin:50px auto;
+}
+
+
+.about .box-left {
+    flex-basis:20%;
+    flex-wrap: wrap;
+    padding:40px 60px;
+    font-size:20px;
+    background-color: white;
+    font-weight: 500;
+    
+    
+    
+   
+   
+}
+
+
+.about .box-left .about-logo {
+    flex : 1 1 50rem;
+    font-size:35px;
+    font-weight:700;
+    color: black;
+    margin-left: 10%;
+ 
+}
+
+
+.about .box-left .about-logo logo{
+    width : 100%;
+}
+
+
+.about .box-left .about-logo span{
+    color: var(--primary);
+}
+
+.about .box-right {
+    flex-basis:80%;
+    flex-wrap: wrap;
+    padding:40px;
+    background-color: rgb(255, 242, 0);
+    font-weight:500;
+    font-size:15px;
+}
+
+
+
+.about .box-right .content {
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+
+.about .box-right .content p {
+    margin-bottom : 0.8rem;
+    font-size : 20px;
+    font-weight: 400;
+    margin: 15px;
+    line-height: 1.6;
+}
+
+.about .box-right .button {
+    background-color:black ;
+    width: 50%;
+    outline:none;
+    font-weight:600;
+    color:white;
+    height:33px;
+    border:0.5px solid white;
+    box-sizing: border-box;
+    font-family: 'Maven Pro',sans-serif;
+    text-align: center;
+    margin-right: 40px;
+    margin-top:20px;
+    cursor: pointer;
+    
+
+}
+
+.about .box-right .button:hover {
+    color:rgb(255, 242, 0);
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+        
+        
+    }
+    .about .box-right {
+        flex-wrap: wrap;
+    }
+
+    .about .box-left {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 55%;
+    }
+    
+    .about .box-right {
+        flex-wrap: wrap;
+    }
+
+    .about .box-left {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+/*Mobil*/
+.Mobil {
+padding: 10rem 7% 1.4rem;
+background-color: white;
+
+}
+
+
+.Mobil .Judul {
+   color: black;;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom:3rem;  
+}
+
+.Mobil .row {
+    display : flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    margin-left:20px; 
+    justify-content: space-around;
+    gap: 5rem;
+}
+
+.Mobil .row .menu-card {
+    text-align:center;
+    padding-bottom: 1rem;
+    border: 1px solid white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+.Mobil .row .menu-kartu-img-pos1 {
+    float: left;
+    padding-bottom: 0%;
+
+}
+
+.Mobil .row .menu-kartu-img-pos2 {
+    float: right; 
+    padding-bottom: 0%;
+
+}
+
+
+
+
+.Mobil .row .menu-card-judul {
+    color: black;
+     margin: 1rem auto 0.5rem;
+     font-size:15px;
+    font-weight: 700;
+}
+
+.Mobil .row .menu-kartu-harga {
+    color: black;
+    margin-top:1rem auto 0.5rem;
+    font-weight: 400;
+}
+.Mobil .row .menu-kartu-button {
+    color:white;
+ background-color:black ;
+    width: 50%;
+    outline:none;
+    font-weight:600;
+    color:white;
+    height:33px;
+    border:0.5px solid white;
+    box-sizing: border-box;
+    font-family: 'Maven Pro',sans-serif;
+    text-align: center;
+    margin-left: 5px;
+    margin-top:20px;
+    cursor: pointer;
+    
+
+}
+
+.Mobil .menu-kartu-button:hover {
+    color:rgb(255, 242, 0);
+}
+
+.Mobil p {
+    background-color: white;
+    color:black;
+    padding-left: 30px;
+    font-weight: 300;
+    font-size:15px
+}
+
+
+
