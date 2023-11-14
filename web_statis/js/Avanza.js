@@ -43,37 +43,16 @@ function showTime() {
 
 showTime();
 
-// hide
-var acc = document.getElementsByClassName("hide");
-var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
+// Akordion
+const accordion = document.getElementsByClassName("container");
+
+for (i = 0; i < accordion.length; i++) {
+  accordion[i].addEventListener("click", function () {
     this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
   });
 }
 
-// hide
-var acc = document.getElementsByClassName("hide2");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
 
 // slideshow
 let slideIndex = 1;

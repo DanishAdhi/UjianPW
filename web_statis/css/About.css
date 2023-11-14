@@ -27,7 +27,7 @@ body{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.3rem 7%;
+    padding: 1rem 7%;
     background-color:rgb(255, 242, 0);
     border-bottom: 1px solid var(--primary);
     position:fixed;
@@ -39,7 +39,7 @@ body{
 
 
 .navbar .navbar-logo {
-    font-size:1.5rem;
+    font-size:20px;
     font-weight:700;
     color: black;
     
@@ -54,6 +54,7 @@ body{
 .navbar .navbar-nav a {
     color:black;
     display: inline-block;
+    font-size: 12px;
     font-weight: 500;
     margin: 0 3rem; 
 
@@ -265,7 +266,7 @@ transition:0.2s linear;
 /*sidebar&media queries*/
 
 
-@media (max-width: 1366px) {
+@media (max-width: 1920px) {
     html {
         font-size: 75%;
     }
@@ -495,6 +496,31 @@ transition:0.2s linear;
  }
 }
 
+/*breadcrumbs*/
+ul.bread-nav {
+  padding: 5px 12px;
+  list-style: none;
+  
+
+  
+}
+ul.bread-nav li {
+  display: inline;
+  font-weight: 200;
+  font-size: 12px;
+}
+ul.bread-nav li+li:before {
+  padding: 8px;
+  color: black;
+  content:">";
+}
+ul.bread-nav li a {
+  color: black ;
+  text-decoration: none;
+}
+ul.bread-nav li a:hover {
+  text-decoration: underline;
+}
 /*konten*/
 
 #A {
@@ -533,10 +559,10 @@ transition:0.2s linear;
     margin-left: 12px;
 } 
 
-     
+   
 .Visimisi {
     background-color:rgb(255, 212, 128);
-    width: auto;
+    width: 1920;
     height: auto;
     padding: 10px;
      margin-left: 0;
