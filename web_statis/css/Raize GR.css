@@ -756,7 +756,7 @@ background-color: white;
 
 
 .accordion .container.active .content {
-  height: 720px;
+  height: auto;
 }
 
 

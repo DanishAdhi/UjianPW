@@ -526,7 +526,7 @@ ul.bread-nav li a:hover {
     color: black;
     margin-left: 40%;
     margin-right: 40%;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 700;
     
    
@@ -565,68 +565,25 @@ ul.bread-nav li a:hover {
     margin-left: 20px;
 } 
 
-     
-.Visimisi {
-    background-color:rgb(255, 212, 128);
-    width: auto;
-    height: auto;
-    padding: 10px;
-    margin-left: 0;
-    margin-right: 0;
-    float: left;
-   
-}
-
-
-.icon{
-    color: black;
-    margin:0 0.5rem;
-    padding-right:.5rem;
-
-}
-
-.icon:hover {
-    padding-right:2rem;
-    color:var(--primary);
-}
-
-
-
-.box a {
-    color:black;
-    font-size:15px;
-    display:block;
-    padding-top: 0;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-left: 20px;
-}
-
 /*contact form*/
 
 .container{
 width:80%;
-margin:50px auto;
+margin:70px auto;
+box-sizing: border-box;
 }
 
-.contact-box{
+.Contact-box{
     background: white;
     display:flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 }
 
 
-.contact-left {
-    flex-basis:40%;
-    padding:40px;
-    background-color: rgb(255, 242, 0);
-    font-weight:500;
-    font-size:15px;
-}
 
-.contact-right {
-    flex-basis:60%;
-    padding:40px 60px;
+.Contact-center{
+   
+    padding:50px 50px;
     font-size:15px;
     font-weight: 500;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -670,119 +627,25 @@ margin:50px auto;
  }
 
  .button {
-    background-color:rgb(255, 242, 0) ;
-    width: 100px;
-    border:none;
+    background-color:rgb(255, 242, 0);
+    border:1px solid black;
     outline:none;
     font-weight:600;
+    font-size:18px;
     color:black;
-    height:30px;
-    border-radius:5px;
+    height:40px;
+    width: 150px;
     font-family: 'Maven Pro',sans-serif;
     text-align: center;
+    margin-left: 40%;
     margin-top:20px;
     cursor: pointer;
      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
  }
 
- tr td:first-child {
-    padding-right:20px;
+ .button:hover {
+    color:white;
  }
-
-
-
-
-
-
-/*footer*/
-.footer {
-    background: rgb(255, 242, 0);
-    width: auto;
-    margin: -13.9%;
-
-    
-}
-.footer .box-container {
-    display:grid;
-    grid-template-columns : repeat(auto-fit,minimal(25rem,1fr));
-    gap:1.5rem;
-    
-}
-
-.footer .box-container .box h3{
-    color: black;
-    font-size:2.2rem;
-    padding:2rem 0;
-}
-
-.footer .box-container .box a {
-    color:black;
-    font-size:1.5rem;
-    display:block;
-    padding: 1 rem 0;
-} 
-
-
-
-.footer .icon a{
-    color: black;
-    margin:0 0.5rem;
-    padding-right:.5rem;
-
-}
-
-.footer .icon a:hover {
-    padding-right:2rem;
-    color:var(--primary);
-}
-
-/*map*/
-.hide {
-  background-color: rgb(255, 242, 0);
-  color: black;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: center;
-  outline: none;
-  font-size: 15px;
-  font-family: 'Maven Pro',sans-serif;
-  font-weight: 500;
-  transition: 0.4s;
-}
-
-.active, .hide:hover {
-  background-color:rgb(255, 242, 0); 
-}
-
-.panel {
-  padding: 0 18px;
-  display: none;
-  background-color: white;
-  overflow: hidden;
-}
-
-.google-map {
-  padding-bottom: 50%;
-  position: relative;
-}
-
-.google-map iframe {
-  height: 600px;
-  width: 900px;
-  left: -2%;
-  top: 20%;
-  position: absolute;
-}
-
-
-
-
-
-
-
-
 
 
 

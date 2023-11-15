@@ -677,7 +677,7 @@ ul.bread-nav li a:hover {
     to {opacity: 1}
   }
   
-  /* On smaller screens, decrease text size */
+
   @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
   }
@@ -756,7 +756,7 @@ background-color: white;
 
 
 .accordion .container.active .content {
-  height: 730px;
+  height: auto;
 }
 
 
