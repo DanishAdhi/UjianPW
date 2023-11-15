@@ -696,7 +696,8 @@ margin:50px auto;
 /*footer*/
 .footer {
     background: rgb(255, 242, 0);
-    width: 100%;
+    width: auto;
+    margin: -13.9%;
 
     
 }

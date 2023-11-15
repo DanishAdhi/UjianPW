@@ -706,6 +706,7 @@ background-color: white;
 }
 
 
+
 .accordion .label {
   position: relative;
   padding: 10px 0;
@@ -746,8 +747,6 @@ background-color: white;
     margin-right: 50px;
    
 }
-
-
 .accordion hr {
   margin-right: 2%;
   margin-left: 2%;
@@ -755,8 +754,9 @@ background-color: white;
 
 }
 
+
 .accordion .container.active .content {
-  height: 400px;
+  height: 730px;
 }
 
 
@@ -764,6 +764,8 @@ background-color: white;
   content: '-';
   font-size: 25px;
 }
+
+
 
 
 

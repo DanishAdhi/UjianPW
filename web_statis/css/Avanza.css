@@ -664,7 +664,7 @@ ul.bread-nav li a:hover {
         }
 
     .active, .dot:hover {
-        background-color: #717171;
+        background-color: rgb(255, 242, 0);
         }
 
     .fade {
@@ -677,7 +677,7 @@ ul.bread-nav li a:hover {
     to {opacity: 1}
   }
   
-  /* On smaller screens, decrease text size */
+ 
   @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
   }
@@ -705,7 +705,6 @@ background-color: white;
   margin: 10px 10px;
 }
 
-/* Positions the labels relative to the .container. Adds padding to the top and bottom and increases font size. Also makes its cursor a pointer */
 
 .accordion .label {
   position: relative;
@@ -747,11 +746,10 @@ background-color: white;
     margin-right: 50px;
    
 }
-/* Adds a horizontal line between the contents */
 
 .accordion hr {
-  margin-right: 10%;
-  margin-left: 10%;
+  margin-right: 2%;
+  margin-left: 2%;
   border: 1px solid black;
 
 }
