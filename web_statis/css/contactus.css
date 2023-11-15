@@ -607,12 +607,13 @@ ul.bread-nav li a:hover {
 .container{
 width:80%;
 margin:50px auto;
+flex-wrap: wrap;
 }
 
 .contact-box{
     background: white;
     display:flex;
-    flex-wrap: wrap;
+    
 }
 
 
@@ -622,6 +623,7 @@ margin:50px auto;
     background-color: rgb(255, 242, 0);
     font-weight:500;
     font-size:15px;
+    flex-wrap: wrap;
 }
 
 .contact-right {
@@ -630,6 +632,7 @@ margin:50px auto;
     font-size:15px;
     font-weight: 500;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    flex-wrap: wrap;
     
     
 }
