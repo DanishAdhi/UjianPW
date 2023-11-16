@@ -565,10 +565,8 @@ ul.bread-nav li a:hover {
     margin-left: 20px;
 } 
 
-/*Sell your car form*/
-
 .container{
-width:80%;
+width:50%;
 margin:70px auto;
 box-sizing: border-box;
 }
@@ -599,31 +597,18 @@ box-sizing: border-box;
  .input-row {
    display:flex;
    justify-content: space-between;
-   margin-bottom:20px; 
+   margin-bottom:10px; 
  }
 
- .input-row .input-group {
-    flex-basis: 45%;
- }
+
  input {
-    width:100%;
-    border:none;
+    width:50%;
+    margin-left:27%;
+    border-bottom: 1px solid black;
     outline:none;
     padding-bottom:5px;
  }
 
- textarea{
-    width:100%;
-    border:1px solid #ccc;
-    outline:none;
-    padding:10px;
-    box-sizing:border-box;
- }
- 
- label {
-    margin-bottom:6px;
-   display:block;
- }
 
  .button {
     background-color:rgb(255, 242, 0);
@@ -633,10 +618,10 @@ box-sizing: border-box;
     font-size:18px;
     color:black;
     height:40px;
-    width: 150px;
+    width: 50%;
     font-family: 'Maven Pro',sans-serif;
     text-align: center;
-    margin-left: 43%;
+    margin-left: 27%;
     margin-top:20px;
     cursor: pointer;
      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -645,6 +630,36 @@ box-sizing: border-box;
  .button:hover {
     color:white;
  }
+
+
+
+
+ .button2 {
+    background-color:rgb(255, 242, 0);
+    border:1px solid black;
+    border-radius: 5px;
+    outline:none;
+    font-weight:600;
+    font-size:18px;
+    color:black;
+    height:40px;
+    width: 70%;
+    font-family: 'Maven Pro',sans-serif;
+    text-align: center;
+    margin-left: 18%;
+    margin-top:20px;
+    cursor: pointer;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ }
+
+ .button2:hover {
+    color:white;
+ }
+
+ .fa-google {
+    color:	#4285F4;
+ }
+
 
 
 
