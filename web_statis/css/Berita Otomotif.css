@@ -553,6 +553,15 @@ ul.bread-nav li a:hover {
 } 
 
 
+.paragraf2 {
+    margin-left: 12%;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: justify;
+    font-family: 'Maven Pro',sans-serif
+}
+
+
 .button{
     background-color:black ;
     width: 200px;
@@ -679,121 +688,6 @@ ul.bread-nav li a:hover {
 }
 
 
-/*Akordion (konten)*/
-
-.accordion {
-  margin-left: 10%;
-  margin-right: 10%;
-  color: black;
-  background-color: white;
-  padding: 35x 35px;
-}
-.accordion .container {
-background-color: white;
-  position: relative;
-  margin: 10px 10px;
-}
-
-
-
-.accordion .label {
-  position: relative;
-  padding: 10px 0;
-  text-align: center;
-  font-size: 25px;
-  font-weight: 400;
-  color: black;
-  font-family: 'Maven Pro',sans-serif;
-  cursor: pointer;
-}
-
-.accordion .label::before {
-  content: '+';
-  color: black;
-  position: absolute;
-  top: 50%;
-  right: -5px;
-  font-size: 30px;
-  font-family: 'Maven Pro',sans-serif;
-  transform: translateY(-50%);
-}
-
-
-
-
-.accordion .content {
-  position: relative;
-  background: white;
-  height: 0;
-  font-size: 20px;
-  text-align: justify;
-  width: 80%;
-  overflow: hidden;
-  transition: 0.5s;
-  list-style-type: circle;
-    color: black;
-    margin-left: 50px;
-    margin-right: 50px;
-   
-}
-.accordion hr {
-  margin-right: 2%;
-  margin-left: 2%;
-  border: 1px solid black;
-
-}
-
-
-.accordion .container.active .content {
-  height: auto;
-}
-
-
-.accordion .container.active .label::before {
-  content: '-';
-  font-size: 25px;
-}
-
-
-
-
-
-
-
-p, ul {
-    margin-left: 50px;
-    margin-right: 50px;
-    font-family: 'Maven Pro',sans-serif;
-    font-weight: 500;
-    color: black;
-    text-align: justify;
-}
-
-ul.a {
-    list-style-type: circle;
-    color: black;
-    margin-left: 50px;
-    margin-right: 50px;
-   
-}
-
- tr td:first-child {
-    padding-right: 60px;
-    padding-bottom: 4px;
-    font-size: 20px;
-    font-family: 'Maven Pro',sans-serif;
-    font-weight: 600;
-    
- }
-
-
- td {
-    align-items: center;
-    font-family: 'Maven Pro',sans-serif;
-    font-size: 20px;
-    font-weight: 600;
- }
- 
 
  
 /*footer*/
