@@ -653,8 +653,8 @@ gap:8px;
 }
 
 .contain {
-    width:40vmin;
-    height:40vmin;
+    width:50vmin;
+    height:50vmin;
     border: 1px solid white;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     display:flex;
@@ -724,8 +724,8 @@ span.text {
 }
 
 .contain {
-    height:26vmin;
-    width: 26vmin;
+    height:30vmin;
+    width: 30vmin;
     font-size:12px;
 } 
 }
@@ -1152,7 +1152,7 @@ background-color: white;
 .footer {
     background: rgb(255, 242, 0);
     padding-left: 30px;
-    height: 450px;
+    height: 150px;
   
 }
 .footer .box-container {
@@ -1164,13 +1164,13 @@ background-color: white;
 
 .footer .box-container .box h4{
     color: black;
-    font-size:2.2rem;
+    font-size:15px;
     padding:2rem 0;
 }
 
 .footer .box-container .box a {
     color:black;
-    font-size:1.5rem;
+    font-size:12px;
     display:block;
     padding:1rem 0;
 }

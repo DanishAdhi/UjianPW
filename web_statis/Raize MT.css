@@ -812,7 +812,7 @@ ul.a {
    margin: -12.5%;
     width: auto;
     padding-left: 30px;
-    height: 350px;
+    height: 320px;
   
 }
 .footer .box-container {
@@ -825,16 +825,16 @@ ul.a {
 
 .footer .box-container .box h4{
     color: black;
-    font-size:12px;
+    font-size:15px;
     padding:2rem 0;
-     padding-left: 40px;
+    
 
     
 }
 
 .footer .box-container .box a {
     color:black;
-    font-size:15px;
+    font-size:10px;
     display:block;
     padding:1rem 0;
     
@@ -842,13 +842,6 @@ ul.a {
 
 
 
-
-.footer .box-container .box p {
-    color:black;
-    font-size:15px;
-    display:block;
-    padding:1rem 0;
-}
 
 
 .footer .icon a{

@@ -18,7 +18,7 @@ body{
     font-family: 'Maven Pro',sans-serif;
     background-color: var(--background);
     color: black;
-    min-height: 800px;
+    min-height: auto;
     
 }
 
@@ -576,7 +576,7 @@ ul.bread-nav li a:hover {
 .footer {
     background: rgb(255, 242, 0);
     padding-left: 30px;
-    height: 500px;
+    height: 320px;
   
 }
 .footer .box-container {
@@ -586,15 +586,15 @@ ul.bread-nav li a:hover {
     
 }
 
-.footer .box-container .box h3{
+.footer .box-container .box h4{
     color: black;
-    font-size:2.2rem;
+    font-size:15px;
     padding:2rem 0;
 }
 
 .footer .box-container .box a {
     color:black;
-    font-size:1.5rem;
+    font-size:10px;
     display:block;
     padding:1rem 0;
 }
@@ -606,20 +606,6 @@ ul.bread-nav li a:hover {
     padding-right:.5rem;
 
 }
-
-.footer .google-map {
-  padding-bottom: 0%;
-  position: relative;
-}
-
-.footer .google-map iframe {
-  width: 450px;
-  height: 300px;
-  left: 50%;
-  bottom:50%;
-  position: absolute;
-}
-
 
 .footer .icon a:hover {
     padding-right:2rem;

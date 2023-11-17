@@ -572,7 +572,6 @@ box-sizing: border-box;
 }
 
 .Contact-box{
-    background-color: white;
     display:flex;
     flex-wrap:wrap;
 }
@@ -580,6 +579,7 @@ box-sizing: border-box;
 
 
 .Contact-center{
+    background-color: whitesmoke;
     padding:50px 50px;
     font-size:15px;
     font-weight: 500;
@@ -607,6 +607,16 @@ box-sizing: border-box;
     border-bottom: 1px solid black;
     outline:none;
     padding-bottom:5px;
+ }
+
+ .par3 {
+    text-align: center;
+    color:black;
+ }
+
+ .a {
+    color:#4285F4;
+    text-decoration: underline;
  }
 
 
@@ -649,12 +659,13 @@ box-sizing: border-box;
     margin-left: 18%;
     margin-top:20px;
     cursor: pointer;
-     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
  }
 
  .button2:hover {
     color:white;
  }
+
 
  .fa-google {
     color:	#4285F4;

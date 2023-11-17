@@ -702,6 +702,9 @@ flex-wrap: wrap;
     background: rgb(255, 242, 0);
     width: auto;
     margin: -13.9%;
+    height: px;
+    padding-left:10px;
+ 
 
     
 }
@@ -712,17 +715,18 @@ flex-wrap: wrap;
     
 }
 
-.footer .box-container .box h3{
+.footer .box-container .box h4{
     color: black;
-    font-size:2.2rem;
+    font-size:15px;
+    margin-left: 3%;
     padding:2rem 0;
 }
 
 .footer .box-container .box a {
     color:black;
-    font-size:1.5rem;
+    font-size:10px;
     display:block;
-    padding: 1 rem 0;
+    padding: 1rem 0;
 } 
 
 
