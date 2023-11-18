@@ -747,13 +747,13 @@ span.text {
 
 @media screen and (max-width:480px) {
     .wrapper-class {
-        gap:15px;
+        gap:10px;
     }
 
     .contain {
-        width:100%;
+        width:80%;
         font-size:8px;
-        height: 25vmin;
+        height: 60vmin;
     }
 }
 
