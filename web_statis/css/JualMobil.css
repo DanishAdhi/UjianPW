@@ -521,7 +521,7 @@ ul.bread-nav li a:hover {
   text-decoration: underline;
 }
 
-/*kontak kami*/
+
 .Judul {
     color: black;
     margin-left: 40%;
@@ -636,7 +636,7 @@ box-sizing: border-box;
     width: 150px;
     font-family: 'Maven Pro',sans-serif;
     text-align: center;
-    margin-left: 43%;
+    margin-left: 40%;
     margin-top:20px;
     cursor: pointer;
      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
