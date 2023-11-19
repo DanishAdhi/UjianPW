@@ -1,0 +1,773 @@
+:root { 
+    --primary: maroon;
+    --background: white;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    
+}
+
+
+body{
+    font-family: 'Maven Pro',sans-serif;
+    background-color: var(--background);
+    color:black;
+    min-height: auto;
+    
+}
+
+/*Navbar*/
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    background-color: rgb(255, 242, 0);
+    border-bottom: 1px solid var(--primary);
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 9999;
+}
+
+
+.navbar .navbar-logo {
+    font-size:20px;
+    font-weight:700;
+    color: black;
+    
+    
+}
+
+.navbar .navbar-logo span{
+    color: var(--primary);
+}
+
+
+.navbar .navbar-nav a {
+    color:black;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0 3rem; 
+
+}
+
+.navbar .navbar-nav a:hover {
+    color:white;
+}
+
+.navbar .navbar-nav a::after {
+content:'';
+display:block;
+padding-bottom:0.5rem;
+border-bottom: 0.1rem solid var(--primary);
+transform: scaleX(0);
+transition:0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after{
+    transform:scaleX(0.5);
+}
+
+/*dropdown menu 1*/
+
+   
+.navbar .Navbar-nav-dropdown a {
+    color:black;
+    display: block;
+    font-size: 12px;
+    margin: 0 1rem;
+    
+   
+   
+   
+}
+
+.navbar .Navbar-nav-dropdown, .drop-down-menu  {
+    list-style: none;
+    height: 20%;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.drop-down-menu {
+    background-color: rgb(255, 242, 0);
+    min-width: 70px;
+    font-weight: 400;
+    padding-bottom: 20rem;
+    display: none;
+    position: absolute;
+  
+}
+
+
+.navbar .Navbar-nav-dropdown:hover {
+   border-bottom: 0.1rem solid var(--primary);
+    color: black;
+    border-radius: 1rem;
+    transition:0.2s linear;
+}
+
+.navbar .Navbar-nav-dropdown:hover .drop-down-menu {
+    display: block;
+
+}
+
+.navbar .Navbar-nav-dropdown, .drop-down-menu a {
+    display: block;
+    align-items: center;
+    padding: 10px 14px;
+    text-decoration: none;
+}
+
+
+.navbar .Navbar-nav-dropdown .dropdown-icon {
+    font-size: 13px;
+    position: flex;
+    right: 0;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.navbar .Navbar-nav-dropdown:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+ .drop-down-menu :hover {
+    color: white;
+    border-radius: 1rem;
+}
+.navbar .Navbar-nav-dropdown a:hover {
+    color:white;
+}
+
+.navbar .Navbar-nav-dropdown a::after {
+content:'';
+display:block;
+padding-bottom:0.5rem;
+transform: scaleX(0);
+transition:0.2s linear;
+}
+.navbar .Navbar-nav-dropdown a:hover::after{
+    transform:scaleX(0.5);
+}
+
+
+
+
+
+/*dropdown menu 2*/
+
+.navbar .Navbar-dropdown a {
+    color:black;
+    display: inline-block;
+    margin: 0rem;
+    gap:1rem;
+   
+   
+}
+
+.navbar .Navbar-dropdown, .drop-down  {
+    list-style: none;
+    height: 20%;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.drop-down {
+    background-color: rgb(255, 242, 0);
+    min-width: 70px;
+    font-weight: 400;
+    font-size: 12px;
+    padding-bottom: 8rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    display: none;
+    position: absolute;
+  
+}
+
+
+.navbar .Navbar-dropdown:hover {
+   border-bottom: 0.1rem solid var(--primary);
+    color: black;
+    border-radius: 1rem;
+    transition:0.2s linear;
+}
+
+.navbar .Navbar-dropdown:hover .drop-down {
+    display: block;
+
+}
+
+.navbar .Navbar-dropdown, .drop-down a {
+    display: block;
+    align-items: center;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+
+.navbar .Navbar-dropdown .dropdown-icon {
+    font-size: 13px;
+    position: relative;
+    right: -10px;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.navbar .Navbar-dropdown:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+ .drop-down :hover {
+    color: white;
+    border-radius: 1rem;
+}
+.navbar .Navbar-dropdown a:hover {
+    color:white;
+}
+
+.navbar .Navbar-dropdown a::after {
+content:'';
+display:block;
+padding-bottom:0.5rem;
+transform: scaleX(0);
+transition:0.2s linear;
+}
+.navbar .Navbar-dropdown a:hover::after{
+    transform:scaleX(0.5);
+}
+
+
+
+
+/*navbar extra*/
+
+.navbar .navbar-extra a{
+    color: black;
+    margin:0 0.5rem;
+
+}
+
+.navbar .navbar-extra a:hover {
+    color:var(--primary);
+}
+
+
+
+
+/*sidebar&media queries*/
+  
+
+@media (max-width: 1920px) {
+    html {
+        font-size: 75%;
+    }
+    
+.Sidebar {
+  height: 100%;
+  width : 0;
+  position: fixed;
+  z-index:9999;
+  top: 0;
+  right: 0;
+  background-color:rgb(255, 242, 0);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 50px;
+}
+
+.Sidebar a {
+  padding: 8px 8px 7px 32px;
+  text-decoration: none;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.Sidebar a:hover {
+  color: var(--primary);
+}
+
+.Sidebar .closebutton {
+  position: absolute;
+  top: 0;
+  color: black;
+  right: 25px;
+  font-size: 20px;
+  margin-left: 50px;
+}
+.Sidebar .sidebar-logo {
+    font-size: 1.5rem;
+    font-weight:700;
+    color: black;
+    margin-right: 20%;
+    margin-left: 20%;
+   
+}
+
+
+.Sidebar .sidebar-logo span{
+    color: var(--primary);
+}
+
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+  color: black;
+}
+
+
+ #clock {
+	font-size: 1.5rem;
+    color: black;
+    font-weight: 400;
+	width: 50px;
+	margin-left: 20%;
+    margin-right: 20%;
+	text-align: center;
+ }
+}
+    
+
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+    
+.Sidebar {
+  height: 100%;
+  width : 0;
+  position: fixed;
+  z-index:9999;
+  top: 0;
+  right: 0;
+  background-color:rgb(255, 242, 0);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 50px;
+}
+
+.Sidebar a {
+  padding: 8px 8px 7px 32px;
+  text-decoration: none;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.Sidebar a:hover {
+  color: var(--primary);
+}
+
+.Sidebar .closebutton {
+  position: absolute;
+  top: 0;
+  color: black;
+  right: 25px;
+  font-size: 20px;
+  margin-left: 50px;
+}
+.Sidebar .sidebar-logo {
+    font-size: 1.5rem;
+    font-weight:700;
+    color: black;
+    margin-right: 20%;
+    margin-left: 20%;
+   
+}
+
+
+.Sidebar .sidebar-logo span{
+    color: var(--primary);
+}
+
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+  color: black;
+}
+
+
+ #clock {
+	font-size: 1.5rem;
+    color: black;
+    font-weight: 400;
+	width: 50px;
+	margin-left: 20%;
+    margin-right: 20%;
+	text-align: center;
+ }
+}
+    
+
+
+/*Tablet*/
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    
+.Sidebar {
+  height: 100%;
+  width : 0;
+  position: fixed;
+  z-index:9999;
+  top: 0;
+  right: 0;
+  background-color:rgb(255, 242, 0);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 50px;
+}
+
+.Sidebar a {
+  padding: 8px 8px 7px 32px;
+  text-decoration: none;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.Sidebar a:hover {
+  color: var(--primary);
+}
+
+.Sidebar .closebutton {
+  position: absolute;
+  top: 0;
+  color: black;
+  right: 25px;
+  font-size: 20px;
+  margin-left: 50px;
+}
+.Sidebar .sidebar-logo {
+    font-size: 1.5rem;
+    font-weight:700;
+    color: black;
+    margin-right: 20%;
+    margin-left: 20%;
+   
+}
+
+
+.Sidebar .sidebar-logo span{
+    color: var(--primary);
+}
+
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+  color: black;
+}
+
+
+ #clock {
+	font-size: 1.5rem;
+    color: black;
+    font-weight: 400;
+	width: 50px;
+	margin-left: 20%;
+    margin-right: 20%;
+	text-align: center;
+ }
+
+}
+
+
+
+/*mobile phone*/
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+    
+.Sidebar {
+  height: 100%;
+  width : 0;
+  position: fixed;
+  z-index:9999;
+  top: 0;
+  right: 0;
+  background-color:rgb(255, 242, 0);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 50px;
+}
+
+.Sidebar a {
+  padding: 8px 8px 7px 32px;
+  text-decoration: none;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.Sidebar a:hover {
+  color: var(--primary);
+}
+
+.Sidebar .closebutton {
+  position: absolute;
+  top: 0;
+  color: black;
+  right: 25px;
+  font-size: 20px;
+  margin-left: 50px;
+}
+.Sidebar .sidebar-logo {
+    font-size: 1.5rem;
+    font-weight:700;
+    color: black;
+    margin-right: 20%;
+    margin-left: 20%;
+   
+}
+
+
+.Sidebar .sidebar-logo span{
+    color: var(--primary);
+}
+
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+  color: black;
+}
+
+
+ #clock {
+	font-size: 1.5rem;
+    color: black;
+    font-weight: 400;
+	width: 50px;
+	margin-left: 20%;
+    margin-right: 20%;
+	text-align: center;
+ }
+}
+
+
+
+/*breadcrumbs*/
+ul.bread-nav {
+  padding: 5px 12px;
+  list-style: none;
+  margin-left: 5%;
+
+  
+}
+ul.bread-nav li {
+  display: inline;
+  font-weight: 200;
+  font-size: 12px;
+}
+ul.bread-nav li+li:before {
+  padding: 8px;
+  color: black;
+  content:">";
+}
+ul.bread-nav li a {
+  color: black ;
+  text-decoration: none;
+}
+ul.bread-nav li a:hover {
+  text-decoration: underline;
+}
+
+
+/*Mobil*/
+.Mobil {
+padding: 10rem 7% 1.4rem;
+background-color: white;
+
+}
+
+
+.Mobil .Judul {
+   color: black;;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom:3rem;  
+}
+
+.Mobil .row {
+    display : flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    margin-left:10%;
+    margin-right: 10%; 
+    justify-content: space-around;
+    gap: 5rem;
+}
+
+.Mobil .row .menu-card {
+    text-align: center;
+    padding-bottom: 1rem;
+    border: 1px solid white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+
+.Mobil .row .menu-card1 {
+    text-align: center;
+    padding-bottom: 1rem;
+    border: 1px solid white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.Mobil .row .menu-kartu-img-pos1 {
+    float: left;
+    padding-bottom: 0%;
+
+}
+
+.Mobil .row .menu-kartu-img-pos2 {
+    float: right; 
+    padding-bottom: 0%;
+
+}
+
+
+
+
+.Mobil .row .menu-card-judul {
+    color: black;
+     margin: 1rem auto 0.5rem;
+     font-size:15px;
+    font-weight: 700;
+}
+
+.Mobil .row .menu-kartu-harga {
+    color: black;
+    margin-top:1rem auto 0.5rem;
+    font-weight: 400;
+}
+.Mobil .row .menu-kartu-button {
+    color:white;
+ background-color:black ;
+    width: 50%;
+    outline:none;
+    font-weight:600;
+    color:white;
+    height:33px;
+    border:0.5px solid white;
+    box-sizing: border-box;
+    font-family: 'Maven Pro',sans-serif;
+    text-align: center;
+    margin-left: 5px;
+    margin-top:20px;
+    cursor: pointer;
+    
+
+}
+
+.Mobil .menu-kartu-button:hover {
+    color:rgb(255, 242, 0);
+}
+
+.Mobil p {
+    background-color: white;
+    color:black;
+    padding-left: 30px;
+    font-weight: 300;
+    font-size:15px
+}
+
+.button2 {
+    color:white;
+ background-color:black ;
+    width: 40%;
+    outline:none;
+    font-weight:600;
+    font-size:20px;
+    color:white;
+    height:50px;
+    border:0.5px solid white;
+    box-sizing: border-box;
+    font-family: 'Maven Pro',sans-serif;
+    text-align: center;
+    margin-left: 30%;
+    margin-top:20px;
+    cursor: pointer;
+}
+.button2:hover {
+    color:rgb(255, 242, 0);
+}
+
+
+
+
+
+
+
+/*footer*/
+.footer {
+    background: rgb(255, 242, 0);
+    padding-left: 30px;
+   
+  
+}
+.footer .box-container {
+    display:grid;
+    grid-template-columns : repeat(auto-fit,minimal(25rem,1fr));
+    gap:1.5rem;
+    
+}
+
+.footer .box-container .box h4{
+    color: black;
+    font-size:15px;
+    padding:2rem 0;
+}
+
+.footer .box-container .box a {
+    color:black;
+    font-size:12px;
+    font-weight: 400;
+    display:block;
+    padding:1rem 0;
+}
+
+
+.footer .icon a{
+    color: black;
+    margin:0 0.5rem;
+    padding-right:.5rem;
+
+}
+
+
+
+.footer .icon a:hover {
+    padding-right:2rem;
+    color:var(--primary);
+}
+

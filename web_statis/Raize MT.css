@@ -501,6 +501,7 @@ transition:0.2s linear;
 ul.bread-nav {
   padding: 5px 12px;
   list-style: none;
+ 
 
   
 }
@@ -522,11 +523,8 @@ ul.bread-nav li a:hover {
   text-decoration: underline;
 }
 
-/*Konten*/
-.Wrapper-content {
-    margin-left: 10%;
-    margin-right: 10%;
-}
+
+/*konten*/
 
 .Judul {
     color: black;

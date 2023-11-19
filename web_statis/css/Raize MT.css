@@ -1,0 +1,863 @@
+:root { 
+    --primary: maroon;
+    --background: white;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    
+}
+
+
+body{
+    font-family: 'Maven Pro',sans-serif;
+    background-color: var(--background);
+    color: black;
+    min-height: 2000;
+}
+
+/*Navbar*/
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    font-family: 'Maven Pro',sans-serif;
+    align-items: center;
+    padding: 1rem 7%;
+    background-color:rgb(255, 242, 0);
+    border-bottom: 1px solid var(--primary);
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 9999;
+}
+
+
+.navbar .navbar-logo {
+    font-size:20px;
+    font-weight:700;
+    color: black;
+    
+    
+}
+
+.navbar .navbar-logo span{
+    color: var(--primary);
+}
+
+
+.navbar .navbar-nav a {
+    color:black;
+    display: inline-block;
+    font-size:12px;
+    font-weight: 500;
+    margin: 0 3rem; 
+
+}
+
+.navbar .navbar-nav a:hover {
+    color:white;
+}
+
+.navbar .navbar-nav a::after {
+content:'';
+display:block;
+padding-bottom:0.5rem;
+border-bottom: 0.1rem solid var(--primary);
+transform: scaleX(0);
+transition:0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after{
+    transform:scaleX(0.5);
+}
+
+/*dropdown menu 1*/
+
+   
+.navbar .Navbar-nav-dropdown a {
+    color:black;
+    display: block;
+    margin: 0 1rem;
+    
+   
+   
+   
+}
+
+.navbar .Navbar-nav-dropdown, .drop-down-menu  {
+    list-style: none;
+    height: 20%;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.drop-down-menu {
+    background-color: rgb(255, 242, 0);
+    min-width: 70px;
+    font-weight: 400;
+    padding-bottom: 20rem;
+    display: none;
+    position: absolute;
+  
+}
+
+
+.navbar .Navbar-nav-dropdown:hover {
+   border-bottom: 0.1rem solid var(--primary);
+    color: black;
+    border-radius: 1rem;
+    transition:0.2s linear;
+}
+
+.navbar .Navbar-nav-dropdown:hover .drop-down-menu {
+    display: block;
+
+}
+
+.navbar .Navbar-nav-dropdown, .drop-down-menu a {
+    display: block;
+    align-items: center;
+    padding: 10px 14px;
+    text-decoration: none;
+}
+
+
+.navbar .Navbar-nav-dropdown .dropdown-icon {
+    font-size: 13px;
+    position: flex;
+    right: 0;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.navbar .Navbar-nav-dropdown:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+ .drop-down-menu :hover {
+    color: white;
+    border-radius: 1rem;
+}
+.navbar .Navbar-nav-dropdown a:hover {
+    color:white;
+}
+
+.navbar .Navbar-nav-dropdown a::after {
+content:'';
+display:block;
+padding-bottom:0.5rem;
+transform: scaleX(0);
+transition:0.2s linear;
+}
+.navbar .Navbar-nav-dropdown a:hover::after{
+    transform:scaleX(0.5);
+}
+
+
+
+
+
+/*dropdown menu 2*/
+
+.navbar .Navbar-dropdown a {
+    color:black;
+    display: inline-block;
+    margin: 0rem;
+    gap:1rem;
+   
+   
+}
+
+.navbar .Navbar-dropdown, .drop-down  {
+    list-style: none;
+    height: 20%;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.drop-down {
+    background-color: rgb(255, 242, 0);
+    min-width: 70px;
+    font-weight: 400;
+    font-size: 14px;
+    padding-bottom: 8rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    display: none;
+    position: absolute;
+  
+}
+
+
+.navbar .Navbar-dropdown:hover {
+   border-bottom: 0.1rem solid var(--primary);
+    color: black;
+    border-radius: 1rem;
+    transition:0.2s linear;
+}
+
+.navbar .Navbar-dropdown:hover .drop-down {
+    display: block;
+
+}
+
+.navbar .Navbar-dropdown, .drop-down a {
+    display: block;
+    align-items: center;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+
+.navbar .Navbar-dropdown .dropdown-icon {
+    font-size: 13px;
+    position: relative;
+    right: -10px;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.navbar .Navbar-dropdown:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+ .drop-down :hover {
+    color: white;
+    border-radius: 1rem;
+}
+.navbar .Navbar-dropdown a:hover {
+    color:white;
+}
+
+.navbar .Navbar-dropdown a::after {
+content:'';
+display:block;
+padding-bottom:0.5rem;
+transform: scaleX(0);
+transition:0.2s linear;
+}
+.navbar .Navbar-dropdown a:hover::after{
+    transform:scaleX(0.5);
+}
+
+
+
+
+/*navbar extra*/
+
+.navbar .navbar-extra a{
+    color: black;
+    margin:0 0.5rem;
+
+}
+
+.navbar .navbar-extra a:hover {
+    color:var(--primary);
+}
+
+
+
+
+
+/*sidebar&media queries*/
+
+
+@media (max-width: 1920px) {
+    html {
+        font-size: 75%;
+    }
+    
+.Sidebar {
+  height: 100%;
+  width : 0;
+  position: fixed;
+  z-index:9999;
+  top: 0;
+  right: 0;
+  background-color:rgb(255, 242, 0);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 50px;
+}
+
+.Sidebar a {
+  padding: 8px 8px 7px 32px;
+  text-decoration: none;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.Sidebar a:hover {
+  color: var(--primary);
+}
+
+.Sidebar .closebutton {
+  position: absolute;
+  top: 0;
+  color: black;
+  right: 25px;
+  font-size: 20px;
+  margin-left: 50px;
+}
+.Sidebar .sidebar-logo {
+    font-size: 1.5rem;
+    font-weight:700;
+    color: black;
+    margin-right: 20%;
+    margin-left: 20%;
+   
+}
+
+
+.Sidebar .sidebar-logo span{
+    color: var(--primary);
+}
+
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+  color: black;
+}
+
+
+ #clock {
+	font-size: 1.5rem;
+    color: black;
+    font-weight: 400;
+	width: 50px;
+	margin-left: 20%;
+    margin-right: 20%;
+	text-align: center;
+ }
+}
+    
+
+
+/*Tablet*/
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    
+.Sidebar {
+  height: 100%;
+  width : 0;
+  position: fixed;
+  z-index:9999;
+  top: 0;
+  right: 0;
+  background-color:rgb(255, 242, 0);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 50px;
+}
+
+.Sidebar a {
+  padding: 8px 8px 7px 32px;
+  text-decoration: none;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.Sidebar a:hover {
+  color: var(--primary);
+}
+
+.Sidebar .closebutton {
+  position: absolute;
+  top: 0;
+  color: black;
+  right: 25px;
+  font-size: 20px;
+  margin-left: 50px;
+}
+.Sidebar .sidebar-logo {
+    font-size: 1.5rem;
+    font-weight:700;
+    color: black;
+    margin-right: 20%;
+    margin-left: 20%;
+   
+}
+
+
+.Sidebar .sidebar-logo span{
+    color: var(--primary);
+}
+
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+  color: black;
+}
+
+
+ #clock {
+	font-size: 1.5rem;
+    color: black;
+    font-weight: 400;
+	width: 50px;
+	margin-left: 20%;
+    margin-right: 20%;
+	text-align: center;
+ }
+
+}
+
+
+
+/*mobile phone*/
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+    
+.Sidebar {
+  height: 100%;
+  width : 0;
+  position: fixed;
+  z-index:9999;
+  top: 0;
+  right: 0;
+  background-color:rgb(255, 242, 0);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 50px;
+}
+
+.Sidebar a {
+  padding: 8px 8px 7px 32px;
+  text-decoration: none;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.Sidebar a:hover {
+  color: var(--primary);
+}
+
+.Sidebar .closebutton {
+  position: absolute;
+  top: 0;
+  color: black;
+  right: 25px;
+  font-size: 20px;
+  margin-left: 50px;
+}
+.Sidebar .sidebar-logo {
+    font-size: 1.5rem;
+    font-weight:700;
+    color: black;
+    margin-right: 20%;
+    margin-left: 20%;
+   
+}
+
+
+.Sidebar .sidebar-logo span{
+    color: var(--primary);
+}
+
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+  color: black;
+}
+
+
+ #clock {
+	font-size: 1.5rem;
+    color: black;
+    font-weight: 400;
+	width: 50px;
+	margin-left: 20%;
+    margin-right: 20%;
+	text-align: center;
+ }
+}
+
+
+/*breadcrumbs*/
+ul.bread-nav {
+  padding: 5px 12px;
+  list-style: none;
+
+  
+}
+ul.bread-nav li {
+  display: inline;
+  font-weight: 200;
+  font-size: 12px;
+}
+ul.bread-nav li+li:before {
+  padding: 8px;
+  color: black;
+  content:">";
+}
+ul.bread-nav li a {
+  color: black ;
+  text-decoration: none;
+}
+ul.bread-nav li a:hover {
+  text-decoration: underline;
+}
+
+/*Konten*/
+.Wrapper-content {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.Judul {
+    color: black;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Maven Pro',sans-serif
+}
+
+
+.Judul2 {
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Maven Pro',sans-serif
+}
+
+.paragraf {
+    font-size: 20px;
+    margin-left: 12%;
+    margin-right: 12%;
+    font-weight: 500;
+    text-align: justify;
+    font-family: 'Maven Pro',sans-serif;
+   
+} 
+
+
+.paragraf2 {
+    margin-left: 65%;
+    font-weight: 500;
+    font-size: 26px;
+    text-align: justify;
+    font-family: 'Maven Pro',sans-serif
+   
+} 
+.button{
+    background-color:black ;
+    width: 200px;
+    height: 50px;
+    outline:none;
+    font-weight:600;
+    color:#ffffff;
+    border:0.5px solid black;
+    box-sizing: border-box;
+    font-family: 'Maven Pro',sans-serif;
+    font-size:20px;
+    text-align: center;
+    cursor:pointer;
+    margin-left: 65%;
+    margin-top:20px;
+    
+    
+
+}
+
+.button:hover {
+    color:rgb(255, 242, 0);
+}
+
+.hr {
+    border: none;
+    height: 1px;
+    margin-right: 8%;
+    margin-left: 10%;
+    color: #333; 
+    background-color: #333;
+}
+
+/*slideshow*/
+ * {box-sizing : border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .mySlides {display: none}
+        img {vertical-align: middle;}
+
+    
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        text-align: center;
+        justify-content: space-between;
+        padding: auto;
+        margin: auto;
+        }
+
+    
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 30%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        }
+
+    .prev {
+        left: 10%;
+        border-radius: 3px 0 0 3px;
+        }
+        
+    .next {
+        right: 10%;
+        border-radius: 3px 0 0 3px;
+        }
+
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+        }
+
+
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+        }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        }
+
+    .active, .dot:hover {
+        background-color: #717171;
+        }
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+        }
+    
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  
+
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Akordion (konten)*/
+
+.accordion {
+  margin-left: 10%;
+  margin-right: 10%;
+  color: black;
+  background-color: white;
+  padding: 35x 35px;
+}
+.accordion .container {
+background-color: white;
+  position: relative;
+  margin: 10px 10px;
+}
+
+/* Positions the labels relative to the .container. Adds padding to the top and bottom and increases font size. Also makes its cursor a pointer */
+
+.accordion .label {
+  position: relative;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+  color: black;
+  font-family: 'Maven Pro',sans-serif;
+  cursor: pointer;
+}
+
+.accordion .label::before {
+  content: '+';
+  color: black;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  font-size: 30px;
+  font-family: 'Maven Pro',sans-serif;
+  transform: translateY(-50%);
+}
+
+
+
+
+.accordion .content {
+  position: relative;
+  background: white;
+  height: 0;
+  font-size: 20px;
+  text-align: justify;
+  width: 80%;
+  overflow: hidden;
+  transition: 0.5s;
+  list-style-type: circle;
+    color: black;
+    margin-left: 50px;
+    margin-right: 50px;
+   
+}
+/* Adds a horizontal line between the contents */
+
+.accordion hr {
+  margin-right: 10%;
+  margin-left: 10%;
+  border: 1px solid black;
+
+}
+
+.accordion .container.active .content {
+  height: 700px;
+}
+
+
+.accordion .container.active .label::before {
+  content: '-';
+  font-size: 25px;
+}
+
+
+
+
+
+p, ul {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: 'Maven Pro',sans-serif;
+    font-weight: 500;
+    color: black;
+    text-align: justify;
+}
+
+ul.a {
+    list-style-type: circle;
+    color: black;
+    margin-left: 50px;
+    margin-right: 50px;
+   
+}
+
+ tr td:first-child {
+    padding-right: 60px;
+    padding-bottom: 4px;
+    font-size: 20px;
+    font-family: 'Maven Pro',sans-serif;
+    font-weight: 600;
+    
+ }
+
+
+ td {
+    align-items: center;
+    font-family: 'Maven Pro',sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+ }
+ 
+
+ 
+/*footer*/
+.footer {
+    background: rgb(255, 242, 0);
+   margin: -12.5%;
+    width: auto;
+    padding-left: 30px;
+    height: 320px;
+  
+}
+.footer .box-container {
+    display:block;
+    grid-template-columns : repeat(auto-fit,minimal(25rem,1fr));
+    gap:1.5rem;
+    
+}
+
+
+.footer .box-container .box h4{
+    color: black;
+    font-size:15px;
+    padding:2rem 0;
+    
+
+    
+}
+
+.footer .box-container .box a {
+    color:black;
+    font-size:10px;
+    display:block;
+    padding:1rem 0;
+    
+}
+
+
+
+
+
+.footer .icon a{
+    color: black;
+    margin:0 0.5rem;
+    padding-right: 5rem;
+
+
+}
+
+
+
+.footer .icon a:hover {
+    padding-right:2rem;
+    color:var(--primary);
+}
+
+
+
